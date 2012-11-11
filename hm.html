@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<script src="myjs.js"></script>
+	<LINK href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1 id="ipH"></h1>
+<input id="txt" type="text" onKeydown="subK(0)"/>
+<button type="button" onclick="sub(0);cl();">Run</button>
+<button type="button" onclick="cl();">Clear</button>
+
+<br>
+<input id="ip" type="text" onKeydown="setIP(0);"/>
+<button type="button" onclick="setIP(1);">Set IP</button>
+
+
+
+ <div class="frame">
+   
+   <div class="topPad">
+		
+		<div class="row" >
+			<div class="button" onClick="addIns('12');"><span>Popcorn</span></div>
+			<div class="button" onClick="addIns('13');"><span>Sensor Reheat</span></div>
+			<div class="button" onClick="addIns('14');"><span>Sensor Cook</span></div>
+			<div class="button" onClick="addIns('67');"><span>Power Level</span></div>
+		</div>
+		
+		<div class="row">
+			<div class="button" onClick="addIns('56');"><span>Inverter Turbo Defrost</span></div>
+			<div class="button" onClick="addIns('57');"><span>Keep Warm</span></div>
+			<div class="button" onClick="addIns('25');"><span>Quick Min</span></div>
+			<div class="button" onClick="addIns('27');"><span>Timer/Clock</span></div>
+		</div>
+	
+	</div> 
+	
+	<div class="pad">
+		
+		<div class="row">
+			<div class="button" onClick="addIns('45');"><span>1</span></div>
+			<div class="button" onClick="addIns('46');"><span class="middle">2</span></div>
+			<div class="button" onClick="addIns('47');"><span class="end">3</span></div>
+		</div>
+		
+		<div class="row">
+			<div class="button" onClick="addIns('34');"><span>4</span></div>
+			<div class="button" onClick="addIns('35');"><span class="middle">5</span></div>
+			<div class="button" onClick="addIns('36');"><span class="end">6</span></div>
+		</div>
+		
+		<div class="row">
+			<div class="button" onClick="addIns('37');"><span>7</span></div>
+			<div class="button" onClick="addIns('23');"><span class="middle">8</span></div>
+			<div class="button" onClick="addIns('24');"><span class="end">9</span></div>
+		</div>
+		
+		<div class="row">
+			<div class="button" onClick="addIns('28');"><span>Stop</span></div>
+			<div class="button" onClick="addIns('26');"><span>0</span></div>
+			<div class="button" onClick="addIns('18');"><span >Start</span></div>
+		</div>
+		
+	</div>
+	
+ </div>
+
+<br><br><br><br><br><br><br><br><br>
+<div>Error Box:</div>
+<input id="di" type="text"  />
+
+<script type="text/javascript" >
+	document.getElementById("ipH").innerHTML="The Arduino Server IP:"+ip;
+	document.getElementById("ip").value=ip;
+</script>
+
+</body>
+</html>
