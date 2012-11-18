@@ -22,7 +22,7 @@ EthernetServer server(80);
 
 //set the pins in use
 
-int pins[]={46,48,49,47,45,43,41,39};
+int pins[]={49,47,45,43,41,39,37,35};
 
 int const NUM_OF_PINS=8;
 
